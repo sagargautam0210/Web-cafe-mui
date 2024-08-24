@@ -42,8 +42,8 @@ const Menu = () => {
                 component="img"
                 src={menu.image}
                 sx={{
-                  height: 300, // Adjust height as needed
-                  objectFit: "cover", // Ensure images cover the container
+                  height: 300, 
+                  objectFit: "cover", 
                   width: "100%",
                 }}
               />
@@ -63,7 +63,7 @@ const Menu = () => {
                 <Button
                   onClick={() => setNotificationMsg(true)}
                   variant="outlined"
-                  sx={{ mt: 1 }} // Add margin-top for spacing
+                  sx={{ mt: 1 }}
                 >
                   rs. {menu.price} /-
                 </Button>
@@ -74,11 +74,11 @@ const Menu = () => {
       </Box>
       <Snackbar 
         open={notificationMsg} 
-        autoHideDuration={3000} // Increased duration for better visibility
+        autoHideDuration={3000} 
         onClose={handleClose}
         anchorOrigin={{
           vertical: 'top',
-          horizontal: 'right', // Adjust positioning if needed
+          horizontal: 'right', 
         }}
       >
         <Alert onClose={handleClose} severity="success">
