@@ -1,0 +1,48 @@
+.Header-box {
+  position: sticky;
+  top: 0px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: medium;
+}
+
+.nav-menu li {
+  margin: 0 1rem;
+}
+
+.nav-menu li a {
+  color: rgb(196, 190, 190);
+  text-decoration: none;
+}
+
+/* Mobile view */
+
+.nav-menu-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.nav-menu-mobile li a {
+  color: rgb(52, 49, 49);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: large;
+  padding: 1rem 8rem;
+}
+
+.nav-menu-mobile li a :focus{
+  background-color: gray;
+}
+
+/* nav active color  */
+.active{
+  color: orange !important;
+}
