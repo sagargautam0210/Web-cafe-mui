@@ -9,9 +9,9 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 function App() {
   return (
     <div>
-       <BrowserRouter>
+       <BrowserRouter basename="/Web-cafe-mui">
          <Routes>
-           <Route path="/" element={<Home />} />
+           <Route path="/Web-cafe-mui" element={<Home />} />
            <Route path="/about" element={<About />} />
            <Route path="/menu" element={<Menu />} />
            <Route path="/contact" element={<Contact />} />
