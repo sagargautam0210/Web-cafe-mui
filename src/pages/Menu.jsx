@@ -14,14 +14,14 @@ import {
 } from "@mui/material";
 
 const Menu = () => {
-let[notificationMsg, setNotificationMsg] = useState(false);
+  const [notificationMsg, setNotificationMsg] = useState(false);
 
-const handleClose = (event, reason) => {
-  if (reason === 'clickaway') {
-    return;
-  }
-  setNotificationMsg(false);
-};
+  const handleClose = (event, reason) => {
+    if (reason === 'clickaway') {
+      return;
+    }
+    setNotificationMsg(false);
+  };
 
   return (
     <Layout>
@@ -36,12 +36,16 @@ const handleClose = (event, reason) => {
         }}
       >
         {MenuList.map((menu) => (
-          <Card sx={{ maxWidth: "300px", minHeight: "250px" }}>
+          <Card key={menu.id} sx={{ maxWidth: 300, minHeight: 250 }}>
             <CardActionArea>
               <CardMedia
-                sx={{ minHeight: "fit-content", backgroundSize: "cover" }}
-                component={"img"}
+                component="img"
                 src={menu.image}
+                sx={{
+                  height: 300, // Adjust height as needed
+                  objectFit: "cover", // Ensure images cover the container
+                  width: "100%",
+                }}
               />
               <CardContent
                 sx={{ display: "flex", flexDirection: "column", gap: 1 }}
@@ -50,32 +54,40 @@ const handleClose = (event, reason) => {
                   sx={{ fontWeight: "bold" }}
                   variant="h5"
                   gutterBottom
-                  component={"div"}
                 >
                   {menu.name}
                 </Typography>
-                <Typography variant="p" sx={{ fontWeight: "bold" }}>
+                <Typography variant="body2" sx={{ fontWeight: "bold" }}>
                   {menu.description}
                 </Typography>
-                <Button onClick={()=>setNotificationMsg(true)} variant="outlined">rs. {menu.price} /-</Button>
+                <Button
+                  onClick={() => setNotificationMsg(true)}
+                  variant="outlined"
+                  sx={{ mt: 1 }} // Add margin-top for spacing
+                >
+                  rs. {menu.price} /-
+                </Button>
               </CardContent>
             </CardActionArea>
           </Card>
         ))}
       </Box>
       <Snackbar 
-      open={notificationMsg} 
-      autoHideDuration={1000}
-      onClose={handleClose}
-      anchorOrigin={{
-        vertical: 'top',
-        horizontal: 'left',
-      }}
-    >
-      <Alert severity="success">Order placed</Alert>
-    </Snackbar>
+        open={notificationMsg} 
+        autoHideDuration={3000} // Increased duration for better visibility
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'right', // Adjust positioning if needed
+        }}
+      >
+        <Alert onClose={handleClose} severity="success">
+          Order placed
+        </Alert>
+      </Snackbar>
     </Layout>
   );
 };
 
 export default Menu;
+
