@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.03ab4a92.css",
+    "main.js": "/static/js/main.0da20e46.js",
+    "static/js/453.ef7e44a7.chunk.js": "/static/js/453.ef7e44a7.chunk.js",
+    "static/media/banner.jpg": "/static/media/banner.422453dfc70ab14463e8.jpg",
+    "static/media/burger.webp": "/static/media/burger.192f5c3a64e60e2d5163.webp",
+    "static/media/salad.webp": "/static/media/salad.d467900b155bba0f707e.webp",
+    "static/media/momo.webp": "/static/media/momo.e337662e2711e1cdbe1b.webp",
+    "static/media/fanta.webp": "/static/media/fanta.ddc6f16c7416c84f6961.webp",
+    "static/media/coke.webp": "/static/media/coke.4148db54df2af6d675cd.webp",
+    "static/media/water.webp": "/static/media/water.0139c3df067026984643.webp",
+    "static/media/pizza.webp": "/static/media/pizza.2d999634e405a90430d7.webp",
+    "static/media/red-label.webp": "/static/media/red-label.578392fced1ffc5a3a1b.webp",
+    "static/media/seven-up.webp": "/static/media/seven-up.848219aab491fe70baf1.webp",
+    "static/media/pasta.webp": "/static/media/pasta.4f3621b1700f580bee69.webp",
+    "static/media/beef.webp": "/static/media/beef.9ce50bd9e2fce618c3b1.webp",
+    "static/media/green-tea.webp": "/static/media/green-tea.9bff61b270e1fa02263e.webp",
+    "static/media/paros.webp": "/static/media/paros.957ed53036b8e9ff7f00.webp",
+    "static/media/chicken-leg.webp": "/static/media/chicken-leg.f55c491aed57b1fdfe37.webp",
+    "static/media/coffee.webp": "/static/media/coffee.ada7e90d0a0b3bff953d.webp",
+    "static/media/mas.webp": "/static/media/mas.8941bd376be8e5674884.webp",
+    "static/media/body 2.jpeg": "/static/media/body 2.594d8fa77113c6abb087.jpeg",
+    "index.html": "/index.html",
+    "main.03ab4a92.css.map": "/static/css/main.03ab4a92.css.map",
+    "main.0da20e46.js.map": "/static/js/main.0da20e46.js.map",
+    "453.ef7e44a7.chunk.js.map": "/static/js/453.ef7e44a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.03ab4a92.css",
+    "static/js/main.0da20e46.js"
+  ]
+}
