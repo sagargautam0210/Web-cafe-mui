@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Web-cafe-mui/static/css/main.bd9cd8b0.css",
-    "main.js": "/Web-cafe-mui/static/js/main.9580e66b.js",
+    "main.js": "/Web-cafe-mui/static/js/main.2b663d27.js",
     "static/js/453.ef7e44a7.chunk.js": "/Web-cafe-mui/static/js/453.ef7e44a7.chunk.js",
     "static/media/banner.jpg": "/Web-cafe-mui/static/media/banner.422453dfc70ab14463e8.jpg",
     "static/media/burger.webp": "/Web-cafe-mui/static/media/burger.192f5c3a64e60e2d5163.webp",
@@ -23,11 +23,11 @@
     "static/media/body 2.jpeg": "/Web-cafe-mui/static/media/body 2.594d8fa77113c6abb087.jpeg",
     "index.html": "/Web-cafe-mui/index.html",
     "main.bd9cd8b0.css.map": "/Web-cafe-mui/static/css/main.bd9cd8b0.css.map",
-    "main.9580e66b.js.map": "/Web-cafe-mui/static/js/main.9580e66b.js.map",
+    "main.2b663d27.js.map": "/Web-cafe-mui/static/js/main.2b663d27.js.map",
     "453.ef7e44a7.chunk.js.map": "/Web-cafe-mui/static/js/453.ef7e44a7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bd9cd8b0.css",
-    "static/js/main.9580e66b.js"
+    "static/js/main.2b663d27.js"
   ]
 }
