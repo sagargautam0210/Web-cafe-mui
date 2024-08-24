@@ -11,7 +11,7 @@ function App() {
     <div>
        <BrowserRouter basename="/Web-cafe-mui">
          <Routes>
-           <Route path="/Web-cafe-mui" element={<Home />} />
+           <Route path="/" element={<Home />} />
            <Route path="/about" element={<About />} />
            <Route path="/menu" element={<Menu />} />
            <Route path="/contact" element={<Contact />} />
