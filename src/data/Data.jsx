@@ -22,7 +22,7 @@ export const MenuList = [
       "A juicy, well-seasoned beef patty nestled in a soft bun with fresh vegetables and condiments, providing a classic and satisfying meal.",
     image: burger,
     price: 199,
-    inStock: true,
+    inStock: true
   },
   {
     name: 'Coffee',
@@ -41,22 +41,6 @@ export const MenuList = [
     inStock: false,
   },
   {
-    name: "Mas",
-    description:
-      "A rich and flavorful traditional dish with a blend of spices and ingredients, offering a hearty and satisfying experience.",
-    image: mas,
-    price: "2,683.95",
-    inStock: true,
-  },
-  {
-    name: "Momo",
-    description:
-      "Delicious steamed dumplings filled with a savory mix of meats and vegetables, served with a tangy dipping sauce.",
-    image: momo,
-    price: 149,
-    inStock: false,
-  },
-  {
     name: "Pasta",
     description:
       "A comforting and creamy pasta dish, cooked to perfection and served with a delectable sauce, garnished with fresh herbs.",
@@ -71,6 +55,14 @@ export const MenuList = [
     image: sevenUp,
     price: 99,
     inStock: true,
+  },
+  {
+    name: "Momo",
+    description:
+      "Delicious steamed dumplings filled with a savory mix of meats and vegetables, served with a tangy dipping sauce.",
+    image: momo,
+    price: 149,
+    inStock: false,
   },
   {
     name: "Chicken Leg",
@@ -143,5 +135,13 @@ export const MenuList = [
     image: greenTea,
     price: 120,
     inStock: false,
-  }
+  },
+  {
+    name: "Mas",
+    description:
+      "A rich and flavorful traditional dish with a blend of spices and ingredients, offering a hearty and satisfying experience.",
+    image: mas,
+    price: "2,683.95",
+    inStock: true,
+  },
 ];

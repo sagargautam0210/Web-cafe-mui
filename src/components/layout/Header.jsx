@@ -9,10 +9,12 @@ import {
   Typography,
 } from "@mui/material";
 import FastfoodIcon from "@mui/icons-material/Fastfood";
+import ShoppingCartSharpIcon from "@mui/icons-material/ShoppingCartSharp";
 import MenuIcon from "@mui/icons-material/Menu";
 import { NavLink } from "react-router-dom";
 import "../../styles/HeaderStyle.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   let [mobileMenu, setMobileMenu] = useState(false);
@@ -34,6 +36,7 @@ const Header = () => {
         Web café
       </Typography>
       <Divider />
+      {/* on mobile */}
       <ul className="nav-menu-mobile">
         <li>
           <NavLink activeClassName="active" to={"/"}>
@@ -85,7 +88,16 @@ const Header = () => {
             <FastfoodIcon sx={{ fontSize: "22px" }} />
             Web café
           </Typography>
+          <Typography
+            sx={{ display: { xs: "block", sm: "none", color: "gray" } }}
+          >
+            {/* cart icon in mobile  */}
+            <NavLink to="/cart">
+              <ShoppingCartSharpIcon style={{ color: "white" }} />
+            </NavLink>
+          </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            {/* menu in big width devices */}
             <ul className="nav-menu">
               <li>
                 <NavLink activeClassName="active" to={"/"}>
@@ -101,10 +113,17 @@ const Header = () => {
               <li>
                 <NavLink to={"/contact"}>Contact</NavLink>
               </li>
+              <li>
+                <NavLink to={"/cart"}>
+                  {" "}
+                  <ShoppingCartSharpIcon />
+                </NavLink>
+              </li>
             </ul>
           </Box>
         </Toolbar>
       </AppBar>
+      {/* bar */}
       <Box conponent="nav">
         <Drawer
           variant="temporary"

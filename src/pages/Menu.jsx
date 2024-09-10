@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Layout from "../components/layout/Layout";
 import { MenuList } from "../data/Data";
 import {
@@ -12,15 +12,26 @@ import {
   Snackbar,
   Typography,
 } from "@mui/material";
+import { CartContext } from "../Context";
 
 const Menu = () => {
   const [notificationMsg, setNotificationMsg] = useState(false);
 
+  // Function to close the notification Snackbar
   const handleClose = (event, reason) => {
     if (reason === 'clickaway') {
       return;
     }
     setNotificationMsg(false);
+  };
+
+  // Access the addCart function from CartContext
+  const { addCart } = useContext(CartContext);
+
+  // Function to handle adding a menu item to the cart
+  const handleAddToCart = (menu) => {
+    addCart(menu); // Add the menu item to the cart
+    setNotificationMsg(true); // Show the notification
   };
 
   return (
@@ -61,7 +72,7 @@ const Menu = () => {
                   {menu.description}
                 </Typography>
                 <Button
-                  onClick={() => setNotificationMsg(true)}
+                  onClick={() => handleAddToCart(menu)} // Correctly pass the function here
                   variant="outlined"
                   sx={{ mt: 1 }}
                 >
@@ -77,12 +88,12 @@ const Menu = () => {
         autoHideDuration={3000} 
         onClose={handleClose}
         anchorOrigin={{
-          vertical: 'top',
+          vertical: 'bottom',
           horizontal: 'right', 
         }}
       >
         <Alert onClose={handleClose} severity="success">
-          Order placed
+          Added to cart
         </Alert>
       </Snackbar>
     </Layout>
@@ -90,5 +101,3 @@ const Menu = () => {
 };
 
 export default Menu;
-
- 
