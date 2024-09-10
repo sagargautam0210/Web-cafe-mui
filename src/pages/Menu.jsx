@@ -72,7 +72,7 @@ const Menu = () => {
                   {menu.description}
                 </Typography>
                 <Button
-                  onClick={() => handleAddToCart(menu)} // Correctly pass the function here
+                  onClick={() => handleAddToCart(menu)}
                   variant="outlined"
                   sx={{ mt: 1 }}
                 >
@@ -100,4 +100,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default Menu; 

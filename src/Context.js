@@ -1,6 +1,6 @@
 import React, { createContext, useState } from 'react';
 
-// Create CartContext
+//CartContext
 export const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
@@ -12,22 +12,14 @@ const CartProvider = ({ children }) => {
     setCartItems((prevItems) => [...prevItems, item]);
   };
 
-  // Function to remove one instance of an item from the cart
-  const removeCart = (itemToRemove) => {
+  // Function to remove an item from the cart by index
+  const removeCart = (itemIndex) => {
     setCartItems((prevItems) => {
-      // Find the index of the first occurrence of the itemToRemove
-      const index = prevItems.findIndex((item) => item.id === itemToRemove.id);
-
-      // If the item is found, remove only that instance
-      if (index !== -1) {
-        return [
-          ...prevItems.slice(0, index),
-          ...prevItems.slice(index + 1),
-        ];
-      }
-
-      // If the item is not found, return the original array
-      return prevItems;
+      // Removving the item at the given index
+      return [
+        ...prevItems.slice(0, itemIndex),
+        ...prevItems.slice(itemIndex + 1),
+      ];
     });
   };
 
