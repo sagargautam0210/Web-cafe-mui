@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Web-cafe-mui/static/css/main.f7a9fc80.css",
-    "main.js": "/Web-cafe-mui/static/js/main.b911af89.js",
+    "main.css": "/Web-cafe-mui/static/css/main.cd38b0c5.css",
+    "main.js": "/Web-cafe-mui/static/js/main.5581b96c.js",
     "static/js/453.ef7e44a7.chunk.js": "/Web-cafe-mui/static/js/453.ef7e44a7.chunk.js",
     "static/media/banner.jpg": "/Web-cafe-mui/static/media/banner.422453dfc70ab14463e8.jpg",
     "static/media/burger.webp": "/Web-cafe-mui/static/media/burger.192f5c3a64e60e2d5163.webp",
@@ -22,12 +22,12 @@
     "static/media/mas.webp": "/Web-cafe-mui/static/media/mas.8941bd376be8e5674884.webp",
     "static/media/body 2.jpeg": "/Web-cafe-mui/static/media/body 2.594d8fa77113c6abb087.jpeg",
     "index.html": "/Web-cafe-mui/index.html",
-    "main.f7a9fc80.css.map": "/Web-cafe-mui/static/css/main.f7a9fc80.css.map",
-    "main.b911af89.js.map": "/Web-cafe-mui/static/js/main.b911af89.js.map",
+    "main.cd38b0c5.css.map": "/Web-cafe-mui/static/css/main.cd38b0c5.css.map",
+    "main.5581b96c.js.map": "/Web-cafe-mui/static/js/main.5581b96c.js.map",
     "453.ef7e44a7.chunk.js.map": "/Web-cafe-mui/static/js/453.ef7e44a7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7a9fc80.css",
-    "static/js/main.b911af89.js"
+    "static/css/main.cd38b0c5.css",
+    "static/js/main.5581b96c.js"
   ]
 }
